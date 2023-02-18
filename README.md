@@ -15,7 +15,7 @@ This code imports the following modules:
 
 ## Usage
 
-To use this code, you need to have Python 3 installed on your system. You can run the script by typing 'python3 pointSpender.py <points> <csvfile>' in the terminal. The <points> should be an integer value for the total points to be spent, and <csvfile> should be the path to the CSV file containing the transaction data.
+To use this code, you need to have Python 3 installed on your system. You can run the script by typing 'python3 pointSpender.py points filename.csv' in the terminal. The 'points' field should be an integer value for the total points to be spent, and 'filename.csv' should be the name of the CSV file containing the transaction data in the same directory as the python file.
 
 The spendPoints function takes a list of command line arguments as input and returns a dictionary with the updated total points for each payer after the points are spent. If any input values are invalid, the function will print an error message and return None.
 
