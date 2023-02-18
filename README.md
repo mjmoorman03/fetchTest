@@ -29,17 +29,17 @@ If there are not enough points to spend, the function will spend as many points 
 
 Suppose you have a CSV file named transactions.csv with the following transaction data:
 
-payer,points,timestamp
-DANNON,1000,2021-02-02T14:00:00Z
-UNILEVER,200,2021-01-01T15:00:00Z
-DANNON,-200,2021-02-02T14:05:00Z
-MILLER COORS,10000,2021-03-02T14:00:00Z
-DANNON,300,2021-02-03T14:00:00Z
+payer,points,timestamp  
+DANNON,1000,2021-02-02T14:00:00Z  
+UNILEVER,200,2021-01-01T15:00:00Z  
+DANNON,-200,2021-02-02T14:05:00Z  
+MILLER COORS,10000,2021-03-02T14:00:00Z  
+DANNON,300,2021-02-03T14:00:00Z  
 
 You can run the script to spend 500 points as follows:
 
-python3 pointSpender.py 500 transactions.csv
-The script will output the updated total points for each payer after the points are spent. In this case, the output will be:
+python3 pointSpender.py 500 transactions.csv  
+The script will output the updated total points for each payer after the points are spent. In this case, the output will be:  
 {'MILLER COORS': 10000, 'DANNON': 800, 'UNILEVER': 0}
 
 This indicates that DANNON has 800 points remaining, UNILEVER has 0 points remaining, and MILLER COORS has 10000 points remaining after spending 500 points.
